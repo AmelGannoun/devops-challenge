@@ -6,9 +6,16 @@ services:
       - "4201:4201"
     depends_on:
       - birdimage
-    
+    networks:
+      - bird-network
+
   birdimage:
     build: ./birdImage
     ports:
       - "4200:4200"
-    
+    networks:
+      - bird-network
+
+networks:
+  bird-network:
+    driver: bridge
