@@ -1,0 +1,14 @@
+version: '3'
+services:
+  bird:
+    build: ./bird
+    ports:
+      - "4201:4201"
+    depends_on:
+      - birdimage
+    
+  birdimage:
+    build: ./birdImage
+    ports:
+      - "4200:4200"
+    
