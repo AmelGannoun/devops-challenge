@@ -1,0 +1,16 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: birdimage-ingress
+spec:
+  rules:
+  - host: birdimage.example.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: birdimage-service
+            port:
+              number: 4200

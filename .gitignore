@@ -4,3 +4,4 @@ birdImage/getBirdImage
 
 infra/.terraform
 infra/*.tfstate
+infra/.tfstate.*
