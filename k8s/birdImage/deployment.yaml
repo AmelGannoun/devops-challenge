@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: birdimage
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: birdimage
+  template:
+    metadata:
+      labels:
+        app: birdimage
+    spec:
+      containers:
+      - name: birdimage
+        image: birdimage:latest 
+        ports:
+        - containerPort: 4200
