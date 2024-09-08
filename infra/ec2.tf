@@ -8,5 +8,14 @@ resource "aws_instance" "bird-instance" {
   tags = {
     Name = "Paris-bird-instance"
   }
+
+
+  user_data = <<-EOF
+    #!/bin/bash
+    sudo apt-get update -y
+    sudo apt install -y docker
+    sudo service docker start
+    sudo usermod -aG docker ec2-user
+  EOF
 }
 
