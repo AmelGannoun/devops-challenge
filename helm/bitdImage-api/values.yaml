@@ -1,0 +1,15 @@
+bird:
+  image:
+    repository: bird
+    tag: latest
+  replicas: 1
+  servicePort: 4201
+birdimage:
+  image:
+    repository: birdimage
+    tag: latest
+  replicas: 1
+  servicePort: 4200
+ingress:
+  enabled: true
+  host: example.com
