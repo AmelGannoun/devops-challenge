@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Chart
+metadata:
+  name: bird-api
+  version: 0.1.0
+  description: A Helm chart for the bird API
+  type: application
+  keywords:
+    - bird
+    - api
+  maintainers:
+    - name: amel
+      email: gannouname9@gmail.com
+templates:
+  - name: bird deployment yaml file
+    path: k8s/bird/deployment.yaml
+  - name: bird service yaml file
+    path: k8s/bird/service.yaml
+  - name: bird ingress yaml file
+    path: bird ingress yaml file

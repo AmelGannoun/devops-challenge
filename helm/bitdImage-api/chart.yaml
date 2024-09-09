@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Chart
+metadata:
+  name: birdimage-api
+  version: 0.1.0
+  description: A Helm chart for the birdimage API
+  type: application
+  keywords:
+    - birdimage
+    - api
+  maintainers:
+    - name: amel
+      email: gannounamel@gmail.com
+templates:
+  - name: birdimage deployment yaml file
+    path: k8s/birdimage/deployment.yaml
+  - name: birdimage service yaml file
+    path: k8s/birdimage/service.yaml
+  - name: birdimage ingress yaml file
+    path: k8s/birdimage/ingress.yaml
