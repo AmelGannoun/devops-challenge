@@ -162,7 +162,7 @@ Do the same job for BirdImage API
    kubectl get ingress
    ```
 
-# Setting up and managing Horizontal Pod Autoscaling (HPA) in Kubernetes. 
+# (HPA) Setup for Bird Application
 
 ## Prerequisites
 - **Metrics Server**: Ensure that the Metrics Server is installed This is required for HPA to work. You can find the installation instructions at [Metrics Server GitHub](https://github.com/kubernetes-sigs/metrics-server).
