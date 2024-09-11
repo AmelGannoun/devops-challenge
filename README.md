@@ -34,6 +34,41 @@ When you run the application (figure it out), you will see the relationship betw
 Do the same job for BirdImage API
 
 
+# Building Docker Images for the Bird Application
+
+## Prerequisites
+
+- **Docker**: Ensure Docker is installed on your machine. You can download it from [docker.com](https://www.docker.com/products/docker-desktop).
+
+## Directory Structure
+
+- `bird/`: Contains the Dockerfile and source code for the `bird` API.
+- `birdimage/`: Contains the Dockerfile and source code for the `birdimage` API.
+
+## Building & Running the Docker Images
+
+   ```bash
+   cd bird
+   docker build -t bird-api -f Dockerfile .
+   docker run -p 4201:4201 bird-api
+   ```
+
+   ```bash
+   cd birdImage
+   docker build -t birdimage-api -f Dockerfile .
+   docker run -p 4200:4200 birdimage-api
+   ```
+
+   Verifying the Images
+   ```bash
+   docker images
+   ```
+   
+   You can also install portainer for a better docker images management
+   [poratiner.io](https://www.portainer.io/)
+
+
+
 
 # Challenge
 
