@@ -88,6 +88,11 @@ Do the same job for BirdImage API
    docker run -p 4200:4200 birdimage-api
    ```
 
+   or YOU CAN RUN SIMPLE THE DOCKER-COMPOSE FILE FOR EASIER PROCEDURE
+   ```bash
+   docker-compose up -d
+   ```
+
    Verifying the Images
    ```bash
    docker images
