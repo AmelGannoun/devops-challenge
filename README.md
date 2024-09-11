@@ -36,6 +36,7 @@ Evaluation criterias:
 - clarity & readability
 
 # ANSWERS
+First of all, I've created a dev branch dev-amel than I've merged into main branch
 
 # Installation & How to run it
 
@@ -170,9 +171,7 @@ Do the same job for BirdImage API
 # (HPA) Setup for Bird Application
 
 ## Prerequisites
-- **Metrics Server**: Ensure that the Metrics Server is installed This is required for HPA to work. You can find the installation instructions at [Metrics Server GitHub](https://github.com/kubernetes-sigs/metrics-server).
-
-First, you have to install Metrics Server:
+- **Metrics Server**: First, you have to install Metrics Server:
      ```bash
      kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
      ```
