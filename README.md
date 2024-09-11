@@ -8,9 +8,32 @@ The app is written in Golang and contains 2 APIs:
 
 When you run the application (figure it out), you will see the relationship between those 2 APIs.
 
-# installation & how to run it
+# Installation & How to run it
 
-Find it
+## Prerequisites
+
+- **Go**: Ensure that you have Go installed on your machine. You can download it from [golang.org](https://golang.org/dl/).
+
+## Setup
+
+1. **Clone the Repository**
+
+2. **Navigate to the `bird` Directory**
+   ```bash
+   cd bird
+   ```
+
+3. **Use the provided Makefile to build the application**
+   ```bash
+   make
+   ```
+4. **Start the bird service**
+   ```bash
+   ./getBird
+   ```
+Do the same job for BirdImage API
+
+
 
 # Challenge
 
