@@ -10,7 +10,7 @@ metadata:
     - api
   maintainers:
     - name: amel
-      email: gannounamel@gmail.com
+      email: 
 templates:
   - name: birdimage deployment yaml file
     path: k8s/birdimage/deployment.yaml
